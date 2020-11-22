@@ -5,10 +5,8 @@
 
 import scrapy
 
-class QuotesSpyderItem(scrapy.Item):
+
+class BooksSpyderItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    quote_text = scrapy.Field()
-    quote_author = scrapy.Field()
-    quote_tags = scrapy.Field()
-
+    pass

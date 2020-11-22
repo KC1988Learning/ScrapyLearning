@@ -1,4 +1,4 @@
-# Scrapy settings for quotes_spyder project
+# Scrapy settings for books_spyder project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'quotes_spyder'
+BOT_NAME = 'books_spyder'
 
-SPIDER_MODULES = ['quotes_spyder.spiders']
-NEWSPIDER_MODULE = 'quotes_spyder.spiders'
+SPIDER_MODULES = ['books_spyder.spiders']
+NEWSPIDER_MODULE = 'books_spyder.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'quotes_spyder (+http://www.yourdomain.com)'
+#USER_AGENT = 'books_spyder (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'quotes_spyder.middlewares.QuotesSpyderSpiderMiddleware': 543,
+#    'books_spyder.middlewares.BooksSpyderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'quotes_spyder.middlewares.QuotesSpyderDownloaderMiddleware': 543,
+#    'books_spyder.middlewares.BooksSpyderDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'quotes_spyder.pipelines.QuotesSpyderPipeline': 300,
+#    'books_spyder.pipelines.BooksSpyderPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

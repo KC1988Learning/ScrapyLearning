@@ -1,8 +1,8 @@
 from scrapy import Request
 from scrapy import Spider
-# from scrapy.loader import ItemLoader
+from scrapy.loader import ItemLoader
 # from itemloaders.processors import MapCompose, TakeFirst, Join
-# from quotes_spyder.items import QuotesSpyderItem
+from quotes_spyder.items import QuotesSpyderItem
 
 def strip_double_quotes(text):
     return text.strip('“').strip('”').replace('‘',"\'").replace('’',"\'")
@@ -11,12 +11,12 @@ def encode_UTF8(text):
     return text.encode(encoding='UTF-8')
 
 # class QuotesLoader(ItemLoader):
-#     # default output processor
-#
-#     quote_text_in = MapCompose(str.strip('â€œ'), str.strip('â€'))
-#     quote_text_in = MapCompose(str.upper)
-#     quote_text_in = MapCompose(encode_UTF8)
-#     quote_author_in = MapCompose(encode_UTF8)
+    # default output processor
+
+    # quote_text_in = MapCompose(str.strip('â€œ'), str.strip('â€'))
+    # quote_text_in = MapCompose(str.upper)
+    # quote_text_in = MapCompose(encode_UTF8)
+    # quote_author_in = MapCompose(encode_UTF8)
 
 class QuotesSpider(Spider):
     name = 'quotes'
